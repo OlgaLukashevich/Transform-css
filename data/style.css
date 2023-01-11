@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  color: rgb(194, 191, 148);
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+p {
+  margin-left: 10%;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(65, 44, 20);
+}
+a {
+  color:rgb(252, 250, 241);
+  text-decoration: none;
+}
+
+/*переход на изменение фона ссылки*/
+a.first_B {
+    margin-left: 13%;
+    padding: 15px 20px;
+    line-height: 40px;
+    background: #9c3;
+    border-radius: 8px;
+    transition:  0.3s ease 0.2s;
+    -webkit-transition:  0.3s ease 0.2s;
+    -moz-transition:  0.3s ease 0.2s;
+    -o-transition:  0.3s ease 0.2s;
+    -ms-transition:  0.3s ease 0.2s; 
+    
+}
+a.first_B:hover,
+a.first_B:focus {
+  background: #690;
+
+}
+
+
+/*переход нескольких свойств*/
+a.second_B {
+  margin-left: 13%;
+  padding: 15px 20px;
+  line-height: 40px;
+  background: rgb(70, 49, 17);
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  
+}
+a.second_B:hover,
+a.second_B:focus {
+  color: rgb(51, 16, 0);
+  background: rgb(240, 184, 152);
+}
+  
+/*преобразовывая содержимое*/
+a.third_B {
+  margin-left: 13%;
+  padding: 15px 20px;
+  line-height: 40px;
+  border-radius: 8px;
+  background: rgb(125, 42, 158);;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  transition: all .1s linear;
+}
+a.third_B:active {
+  box-shadow: 0 2px 0 #0c202b;
+  transform: translateY(3px);
+}
+a.third_B:hover {
+  color: rgb(221, 202, 235);
+  background: #cd29ff;
+  -webkit-box-shadow: 0 2px 0 #130905;
+  -moz-box-shadow: 0 2px 0 #130905;
+  -o-box-shadow: 0 2px 0 #130905;
+  -ms-box-shadow: 0 2px 0 #130905;
+  box-shadow: 0 2px 0 #130905;
+}
+
+
+/*преобразования изображений*/
+
+
+ul li {
+  float: left;
+  margin: 0 10px;
+  padding: 10px;
+  border: 0.05px solid rgb(221, 221, 221);
+  list-style: none;
+}
+  ul li a img {
+  float: left;
+  width: 200px;
+  -webkit-transition: – webkit-transform 0.2s ease-in-out; /*сглаживание масштабирования*/
+  -moz-transition: – moz-transform 0.2s ease-in-out;
+  -o-transition: – moz-transform 0.2s ease-in-out;
+  -ms-transition: – moz-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+/*rotate(-10deg) - поворот*/
+ul.photo1 li a:hover img {
+  -webkit-transform: scale(1.5) rotate(-10deg);
+  -moz-transform: scale(1.5) rotate(-10deg);
+  -o-transform: scale(1.5) rotate(-10deg);
+  -ms-transform: scale(1.5) rotate(-10deg);
+  transform: scale(1.5) rotate(-10deg);
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  /*scale(1.5) - масштабирование  bottom left - относительно чего*/
+ul.photo2 li a:hover img {
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+/*translate(20px, 40px) - сдвиг*/
+ul.photo3 li a:hover img {
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: scale(1.5) translate(80px, 40px);
+  -moz-transform: scale(1.5) translate(80px, 40px);
+  -o-transform: scale(1.5) translate(80px, 40px);
+  -ms-transform: scale(1.5) translate(80px, 40px);
+  transform: scale(1.5) translate(80px, 40px);
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  /*skew(-5deg, 30deg) - кручение*/
+ul.photo4 li a:hover img {
+  -webkit-transform: scale(1.5)  skew(-5deg, 30deg);
+  -moz-transform: scale(1.5)  skew(-5deg, 30deg);
+  -o-transform: scale(1.5)  skew(-5deg, 30deg);
+  -ms-transform: scale(1.5)  skew(-5deg, 30deg);
+  transform: scale(1.5)  skew(-5deg, 30deg);
+  -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+    
+  
+
+
